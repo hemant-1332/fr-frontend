@@ -10,7 +10,7 @@
     "test-coverage": "ng test --sourceMap=false --code-coverage",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot -prod",
+    "postinstall": "ng build --aot --prod",
     "heroku-postbuild": "ng build --prod"
   },
   "private": true,
