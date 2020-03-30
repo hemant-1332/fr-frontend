@@ -1,0 +1,18 @@
+.login {
+    display: inline-block;
+    margin: 30px;
+  }
+  
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 38px;
+  margin: 50px auto;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 50px;
+}

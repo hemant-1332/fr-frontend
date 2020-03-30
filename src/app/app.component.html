@@ -1,0 +1,62 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<mat-toolbar color="primary" class="toolbar mat-elevation-z5">
+
+
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+
+    <button mat-menu-item routerLink="/ui/home">
+      <mat-icon>home</mat-icon>
+      <span>Home</span>
+    </button>
+
+    <button mat-menu-item routerLink="/ui/register">
+      <mat-icon>camera_alt</mat-icon>
+      <span>Register Face</span>
+    </button>
+
+    <button mat-menu-item routerLink="/ui/recognize">
+      <mat-icon>pageview</mat-icon>
+      <span>Recognize Face</span>
+    </button>
+
+    <button mat-menu-item routerLink="/ui/list">
+      <mat-icon>list</mat-icon>
+      <span>List Face</span>
+    </button>
+    
+    <!-- <button mat-menu-item routerLink="/upload">
+      <mat-icon>cloud_upload</mat-icon>
+      <span>Upload Face</span>
+    </button> -->
+
+  </mat-menu>
+
+  <a mat-button routerLink="/ui/home">
+    <h1><span>{{ title }}</span></h1>
+  </a>
+
+  <div class="pc_menu">
+    <a mat-button routerLink="/ui/register">Register Face</a>
+    <a mat-button routerLink="/ui/recognize">Recognize Face</a>
+    <a mat-button routerLink="/ui/list">List Face</a>
+    <!-- <a mat-button routerLink="/ui/login">Admin Login</a> -->
+    <!-- <a mat-button routerLink="/upload">Upload Face</a> -->
+  </div>
+
+  
+  <!-- <button mat-icon-button [matMenuTriggerFor]="profileMenu">      
+    <mat-icon>more_vert</mat-icon>
+  </button>
+
+  <mat-menu #profileMenu="matMenu">
+    <button mat-menu-item>Settings</button>
+    <button mat-menu-item>Help</button>
+  </mat-menu> -->
+
+</mat-toolbar>
+
+<router-outlet></router-outlet>

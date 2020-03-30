@@ -1,0 +1,25 @@
+<div class="container">
+
+  <h2>
+    Step 2: Try to recognize face
+  </h2>
+
+  <mat-card class="photo">
+
+    <video id="video" #video autoplay playsinline></video>
+    <canvas id="canvas" #canvas></canvas>
+
+    <br><br>
+    {{ userMessage }}<br><br>
+
+    <img src="{{ imgSrc }}" alt=""><br><br>
+    <!-- <img src="{{ url_for('video_feed') }}" alt=""><br><br> -->
+
+    <button id="cameraButton" mat-raised-button (click)="onClickCamera()">
+      {{ cameraButtonLabel }}
+    </button>
+
+
+  </mat-card>
+
+</div>

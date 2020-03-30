@@ -1,0 +1,29 @@
+
+
+<div class="container">
+
+  <h1 id="title" class="title"><img [src]="loginlogoimg"></h1>
+  <h2 class="sub-title">Welcome to FR Demo! Log in with your email.</h2>
+
+<mat-card class='login'>
+
+  
+
+  <mat-form-field class="name-field">
+    <input matInput [(ngModel)]="name" placeholder="Username" required>    
+  </mat-form-field>
+  <br>   
+  
+  <mat-form-field class="password-field">
+    <input matInput [(ngModel)]="password" type="password" placeholder="Password" required>
+  </mat-form-field>
+  <br>
+
+  <button mat-raised-button (click)="onClickLogin()" [disabled]="!isGoodToRegister()">
+    Login (In Progress)
+  </button>
+  <br>
+
+  {{ userMessage }}
+</mat-card>
+</div>
