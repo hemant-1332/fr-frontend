@@ -10,8 +10,5 @@ open http://localhost:4200/
 ```
 
 ## Demo
-```
 [https://fr-ui.herokuapp.com](https://fr-ui.herokuapp.com)
-
-```
 
